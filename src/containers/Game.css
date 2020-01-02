@@ -1,0 +1,40 @@
+
+/* CSS Tic Tac Toe Game*/
+
+.square {
+  height: 64px;
+  width: 64px;
+  font-size: 54px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  float: left;
+  text-align: center;
+  padding: 0;
+  line-height: 64px;
+  margin-right: -1px;
+  margin-top: -1px;
+}
+
+.Xsquare {
+  color: blue;
+}
+
+.Osquare {
+  color: crimson;
+}
+
+.board:after {
+  display: table;
+}
+.game {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.status {
+  font-size: 17px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
