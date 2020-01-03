@@ -16,15 +16,16 @@
 }
 
 .Xsquare {
-  color: blue;
+  color: rgb(65, 107, 197);
 }
 
 .Osquare {
   color: crimson;
 }
 
-.board:after {
+.board {
   display: table;
+  padding-right: 20px;
 }
 .game {
   display: flex;
@@ -37,4 +38,11 @@
   font-size: 17px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
+}
+.info {
+  color: #84a7beee;
+  padding-right: 20px;
+  background-color: #f1f1f1;
+  border-style: groove;
+  border-color: #f8f5f8;
 }

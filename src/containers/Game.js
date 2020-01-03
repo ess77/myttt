@@ -26,7 +26,7 @@ import FormGame from './FormGame';
       <div>
         <Board handleClick={(i) => this.handleClick(i)} squares={squares} />
       </div>
-      <div>
+      <div className="info">
         {messageInfo}
         <ol>
           {historyList}
