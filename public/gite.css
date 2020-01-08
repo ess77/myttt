@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+#site {
+  height: 50vh;
+  background-color: #797973;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 133px 65px 180px 150px;
+  /* grid-template-rows: repeat(2, 1fr) 4fr 1fr; */
+  grid-template-areas: 
+      "header header"
+      "nav section"
+      "nav article"
+      "footer footer"
+}
+.header {
+  background-color: #2a7c9c;
+  grid-area: header;
+  background-image: url(public/images/nature_guyane.png);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row-reverse;
+  /* align-items: center; */
+
+  
+}
+header div {
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+  color: white;
+  font-family:'Courgette', cursive, 'Courier New', Courier, monospace, arial;
+  font-size: 15px;
+}
+.nav {
+  background-color: #6390a3;
+  grid-area: nav;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  padding: 20px;
+}
+nav ul li a {
+  color: #eee12d;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: #fff;
+  transition: 1s;
+}
+.section {
+  background-color: #387438;
+  grid-area: section;
+  text-align: center;
+  font-family:'Courgette', cursive, 'Courier New', Courier, monospace, arial;
+  font-size: 35px;
+  color: #e4dada;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.article {
+  background-color: #c4b9b9;
+  grid-area: article;
+}
+.footer {
+  background-color: #797973;
+  grid-area: footer;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #333;
+}
+
+footer div a{
+  text-decoration: none;
+  color: #333;
+}
+footer div:nth-child(2) {
+  border-left: 1px solid #333;
+}
+@media screen and (max-width: 900px) {
+  #site {
+    grid-template-columns: 1fr;
+    grid-template-rows: 133px 65px 830px;
+    grid-template-areas: 
+        "header"
+        "nav"
+        "article"
+        "footer"
+  }
+  .section {
+    display: none;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

@@ -118,8 +118,8 @@ app.delete('/todo', function (req, res) {
 
 // all other requests redirect to 404
 app.all("*", function (req, res, next) {
-    return res.send('page not found');
     next();
+    return res.send('page not found');
 });
 
 // port must be set to 8080 because incoming http requests are routed from port 80 to port 8080
