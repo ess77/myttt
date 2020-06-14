@@ -18,8 +18,9 @@ class FormGame extends Component {
 }
 
 const onSubmit = (values, dispatch) => {
-    // console.log('Onsubmit fired!', values)
-    dispatch(jump_function(values.goto))
+    const stepToGo = values.goto ? values.goto : 0;
+    console.log('Onsubmit fired!', stepToGo);
+    dispatch(jump_function(stepToGo))
   }
 const warn = values => {
     // console.log('warn fired!', values)

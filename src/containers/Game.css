@@ -40,9 +40,14 @@
   font-weight: bold;
 }
 .info {
-  color: #84a7beee;
+  color: #191c1fee;
+  font-weight: 700;
   padding-right: 20px;
   background-color: #f1f1f1;
   border-style: groove;
   border-color: #f8f5f8;
+  text-decoration-style: none;
+}
+ul {
+  list-style-type: none;
 }

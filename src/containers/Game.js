@@ -7,8 +7,11 @@ import FormGame from './FormGame';
 
  class Game extends Component {
    render() {
-    //  console.log('History :  ', this.props.history)
-     const stepNumber = this.props.history.StepNumber
+     console.log('History1 :  ', this.props.history.StepNumber);
+     console.log('History11 :  ', this.props.history.SquaresHistory);
+    //  const stepNumber = (typeof this.props.history.StepNumber === "undefined") ? 0 : this.props.history.StepNumber;
+     const stepNumber = this.props.history.StepNumber;
+     console.log('History 2 :  ', stepNumber);
      const xturn = this.props.history.Xturns[stepNumber]
      const squares = this.props.history.SquaresHistory[stepNumber].Squares
      const winner = this.props.history.Winner
@@ -28,9 +31,9 @@ import FormGame from './FormGame';
       </div>
       <div className="info">
         {messageInfo}
-        <ol>
+        <ul>
           {historyList}
-        </ol>
+        </ul>
       </div>
       <div>
         <FormGame />
