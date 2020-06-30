@@ -8,6 +8,7 @@ import { applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
 import rootReducer from './reducers/index'
 import Game from './containers/Game';
+import Corporate from './components/Corporate';
 
 
 // const middleware = ({ coco }) => (fifi) => (dede) => {
@@ -29,6 +30,7 @@ ReactDOM.render(
     // <Provider store={myStore}><Game />
     <Provider store={createStoreWithMiddleware(rootReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())}>
         <Game />
+        <Corporate />
     </Provider>
         , document.getElementById('root'));
 
