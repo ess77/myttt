@@ -6,7 +6,7 @@ import thunk from 'redux-thunk';
 import { createStore } from 'redux'
 import { applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
-import rootReducer from './reducers/index'
+import rootReducer from './reducers/rootRedux'
 import Game from './containers/Game';
 import Corporate from './components/Corporate';
 

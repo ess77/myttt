@@ -20,9 +20,9 @@ app.post('/log-clients-errors', (req, res) => {
 // connection configurations
 const mc = mysql.createConnection({
     host: 'localhost',
-    user: 'root',
-    password: '12345',
-    database: 'node_task_demo',
+    user: 'martial',
+    password: 'jam176',
+    database: 'sakila',
     //socketPath: '/Applications/MAMP/tmp/mysql/mysql.sock'
 });
 
@@ -77,7 +77,7 @@ app.post('/todo/meterla', function (req, res) {
         return res.status(400).send({ error:true, message: 'Please provide task' });
     }
 
-    //var task = req.body.task;
+    task = req.body.task;
 
     var query = mc.query("INSERT INTO tasks SET ? ", { task: task}, function (error, results, fields) {
         if (error) throw error;
@@ -119,13 +119,13 @@ app.delete('/todo', function (req, res) {
 // all other requests redirect to 404
 app.all("*", function (req, res, next) {
     next();
+    console.log('app.all');
     return res.send('page not found');
 });
 
 // port must be set to 8080 because incoming http requests are routed from port 80 to port 8080
 app.listen(8081, function () {
-    console.log('Escuchando por el puerto 8081');
+    console.log('Ecoute depuis le port 8081');
 });
-
 // allows "grunt dev" to create a development server with livereload
 module.exports = app;
