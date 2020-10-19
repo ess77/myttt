@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import * as serviceWorker from './serviceWorker';
-import thunk from 'redux-thunk';
-import { createStore } from 'redux'
-import { applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
+import { createStore, applyMiddleware } from 'redux'
+import thunk from 'redux-thunk';
+import * as serviceWorker from './serviceWorker';
+import './index.css';
 import rootReducer from './reducers/rootRedux'
 import Game from './containers/Game';
 import Corporate from './components/Corporate';

@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 import './Game.css';
 import Board from './Board';
 import { click_function, jump_function } from '../actions';
 import FormGame from './FormGame';
+import { ButtonTest } from './ButtonTest';
 
  class Game extends Component {
    render() {
@@ -38,6 +39,7 @@ import FormGame from './FormGame';
       <div>
         <FormGame />
       </div>
+      <ButtonTest />
     </div>
   );
   }
