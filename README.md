@@ -1,5 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## `Elfort Systems and Services`&copy;
+# `Welcome in this Tic Tac Toe project, written in React.js 16.12 and Redux  4.0.5`</br>
 
-## Yet another simple Tic Tac Tor implementation
-
-Implemented in React.JS 16.
+## It uses the component based structure of React, and the dispatch feature of Redux.  
+## Components used :  
+### `Game, Board, Square`
+## Actions used :  
+### `CLICK_TURN, CLICK_JUMP`
