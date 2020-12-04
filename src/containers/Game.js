@@ -80,4 +80,4 @@ const mapActionsToProps = {
   handleMyJump: jump_function
 }
 
-export default connect(mapStateToProps, mapActionsToProps)  (Game)
+export default connect(mapStateToProps, mapActionsToProps)(Game)
